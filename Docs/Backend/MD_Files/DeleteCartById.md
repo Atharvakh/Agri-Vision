@@ -1,6 +1,6 @@
 ## Delete Cart Products API - Siddharth Kardile
 ```
-DELETE /user/DeleteCart/{id}
+DELETE /user/deleteCart/{id}
 ```
 
 ## Request Headers
@@ -11,7 +11,7 @@ Content-Type : application/json
 ## Request Body
 ``` json 
 {
-    "id" : int
+    "id" : Long
 }
 ```
 ## Response

@@ -1,23 +1,19 @@
 ## Add Product Into WishList API - Siddharth Kardile
 ```
-POST /user/wishlist
+POST /user/wishlist/add
 ```
 
 ## Request Headers
 ```
 Content-Type : application/json
+Bearer <Token>
+
 ```
  
 ## Request Body
 ``` json 
 {
-  "email" : "String",
-  "productname" : "String",
-  "productcompanyname" : "String",
-  "productimage" : "String",
-  "afterdiscount" : "String",
-  "befoerdiscount" : "String",
-  "discount" : "String",
+  "productId" : "Long"
 }
 ```
 ## Response
@@ -28,6 +24,7 @@ Body
   "message" : "String"
 }
 
-400 - Bad Request - Email Not Found
+400 - Bad Request - user Not Found
+401 - unAuthorized
 404 - Not Found
 500 - Internal Server Error
